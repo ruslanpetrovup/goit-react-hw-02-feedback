@@ -1,8 +1,12 @@
 import React from 'react';
-import Statistics from './Statistics';
-import FeedbackOptions from './FeedbackOptions';
+import Statistics from '../Statistics/Statistics';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 
 class Feedback extends React.Component {
+    static defaultProps = {
+        positive: 0,
+        total: 0
+    }
     state = {
         good: 0,
         neutral: 0,
